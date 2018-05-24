@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Comment;
 
 class User extends Authenticatable
 {
@@ -31,7 +32,6 @@ class User extends Authenticatable
 
       return $this->hasMany(Post::Class);
     }
-
 
     public function publish(Post $post) {
 

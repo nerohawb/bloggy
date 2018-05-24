@@ -26,7 +26,7 @@
     <section id="header">
       <div class="jumbotron jumbotron-fluid" style="background: none  ;">
         <div class="container">
-          <h1 class="text-uppercase font-weight-bold">Bloggy</h1>
+          <h1 class="text-uppercase font-weight-bold"><img src="/images/bloggy-logo-header.svg" height="140" width="140">loggy</h1>
           <h3 class="text-secondary">Share your Thoughts with Everyone</h3>
         </div>
       </div>

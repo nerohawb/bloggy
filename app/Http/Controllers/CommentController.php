@@ -38,9 +38,9 @@ class CommentController extends Controller
     {
       $this->validate(request(), ['body' => 'required|min:2']);
 
-       $post->addComment(request('body'));
-
-        return back();
+      $post->addComment(request('body'));
+      
+      return back();
     }
 
     /**

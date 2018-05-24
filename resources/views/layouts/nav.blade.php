@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
   <div class="container">
-  <a class="navbar-brand" href="/">Bloggy</a>
+
+  <a class="navbar-brand" href="/"><img src="/images/bloggy-logo-nav.svg" height="60" width="60">loggy</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -30,7 +31,10 @@
 
       @if(!Auth::check())
       <li class="nav-item">
-        <a class="nav-link" href="/login">Login</a>
+        <a class="nav-link" href="/login">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/register">Sign Up</a>
       </li>
       @endif
 

@@ -10,7 +10,6 @@
       <ul class="list-unstyled">
         @foreach ($post->tags as $tag)
           <a href="/posts/tags/{{ $tag->name }}"><li>{{ $tag->name }}</li></a>
-
         @endforeach
       @endif
       </ul>
@@ -29,7 +28,7 @@
       <hr>
       <p><strong>{{ $comment->created_at->diffForHumans() }} : </strong>{{ $comment->body }}</p>
 
-      <p class="text-secondary text-right">{{ $post->user->name }}</p>
+      <p class="text-secondary text-right">{{ $comment->user->name }}</p>
 
 
       @endforeach

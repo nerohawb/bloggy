@@ -21,7 +21,7 @@ class SessionController extends Controller
       if (! auth()->attempt(request(['email', 'password']))) {
         return back()->withErrors(['message' => 'Wrong Email and Password']);
       }
-      
+
       return redirect()->home();
     }
 
